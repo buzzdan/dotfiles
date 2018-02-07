@@ -3,7 +3,7 @@ function get_pwd() {
   echo "${PWD/$HOME/~}"
 }
 
-PROMPT='%{$fg_bold[green]%}%p %{$fg[cyan]%}%m %{$fg[yellow]%}$(get_pwd) %{$fg_bold[blue]%}$(git_prompt_info)$(hg_prompt_info)%{$fg_bold[blue]%} % 
+PROMPT=' %{$fg_bold[green]%}%n%p %{$fg[cyan]%}@ %m: %{$fg[yellow]%}$(get_pwd) %{$fg_bold[blue]%}$(git_prompt_info)$(hg_prompt_info)%{$fg_bold[blue]%} % 
  ${ret_status} %{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:(%{$fg[red]%}"
