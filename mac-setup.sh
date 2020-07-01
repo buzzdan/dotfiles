@@ -4,10 +4,13 @@
 sudo chown -R "$(whoami)" "$(brew --prefix)"/*
 brew doctor
 brew update
-brew cask install caskroom/versions/java8
+brew cask install homebrew/cask-versions/adoptopenjdk8
 brew install zsh
-brew install git git-extras tig tree mercurial zsh-syntax-highlighting go clojure leiningen z shellcheck nvm tldr fortune cowsay lolcat asciiquarium
+brew install git git-extras lazygit tree htop zsh-syntax-highlighting clojure leiningen z shellcheck nvm tldr fortune cowsay lolcat asciiquarium
 brew cask install iterm2 visual-studio-code docker postman charles spectacle
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 touch /etc/environment
 {
