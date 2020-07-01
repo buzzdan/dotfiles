@@ -7,7 +7,7 @@ brew update
 brew cask install homebrew/cask-versions/adoptopenjdk8
 brew install zsh
 brew install git git-extras lazygit tree htop zsh-syntax-highlighting clojure leiningen z shellcheck nvm tldr fortune cowsay lolcat asciiquarium
-brew cask install iterm2 visual-studio-code docker postman charles spectacle
+brew cask install iterm2 visual-studio-code docker postman charles spectacle clipy
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
