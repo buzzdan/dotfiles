@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# xcode dev tools
+xcode-select —install
+
 # install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 sudo chown -R "$(whoami)" "$(brew --prefix)"/*
